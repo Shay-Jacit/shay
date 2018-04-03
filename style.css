@@ -28,11 +28,11 @@ body{
 }
 
 .jacit__text{
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding-right: 15px;
     width: auto;
     font-size: 25px;
     color: #fff;
