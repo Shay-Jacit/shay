@@ -29,7 +29,9 @@ body{
 
 .jacit__text{
     display: flex;
-    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     width: auto;
     font-size: 25px;
     color: #fff;
