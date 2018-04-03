@@ -1,9 +1,8 @@
 body{
     background: black;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-/* This is an extra comment for the sake of commiting
+
 /*font-family: 'Open Sans', sans-serif;
 /*font-family: 'IBM Plex Mono', monospace;
 */
@@ -57,7 +56,7 @@ body{
 
 
 
-
+/* This is to try and add a comment so that github will work
  /* These two blocks are for the two different types of containers needed for the documentation */
 .step{
     margin: 5px auto;
