@@ -1,6 +1,14 @@
 body{
     background: black;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+
+/*font-family: 'Open Sans', sans-serif;
+/*font-family: 'IBM Plex Mono', monospace;
+*/
+
+
 
 .inner__container{
     display:grid;
@@ -13,8 +21,21 @@ body{
     border: solid white 1px;
 }
 
+.logo{
+    margin: 5px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.jacit__text{
+    height: 100%;
+    margin: 45 30 0 0;
+}
+
 .topbar__container{
     display: flex;
+    justify-content: space-between;
     grid-column: 1 / -1;
     grid-row: 1 / 4;
     background: limegreen;
