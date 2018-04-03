@@ -32,6 +32,7 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    paddingright: 10px;
     width: auto;
     font-size: 25px;
     color: #fff;
