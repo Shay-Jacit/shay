@@ -1,0 +1,35 @@
+body{
+    background: black;
+}
+
+.inner__container{
+    display:grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    background: black;
+    border: solid white 1px;
+}
+
+.topbar__container{
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 1 / 4;
+    background: limegreen;
+}
+
+.sidebar__nav{
+    overflow-y: scroll;
+    background: aqua;
+    grid-column: 1 / 5;
+    grid-row: 6 / 24;
+}
+
+.content__containers__container{
+    grid-column: 5 / -1;
+    grid-row: 4 / -1;
+    background: violet;
+
+}
