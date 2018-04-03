@@ -29,10 +29,8 @@ body{
 
 .jacit__text{
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    width: 500px;
+    align-items:center;
+    width: auto;
     font-size: 25px;
     color: #fff;
     text-shadow: 1px, 1px rgb(228, 228, 228);
