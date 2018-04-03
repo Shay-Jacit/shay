@@ -54,3 +54,24 @@ body{
     background: violet;
 
 }
+
+.step{
+    margin: 5px auto;
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(230, 230, 230);
+    color: black;
+}
+
+.code{
+    margin: 5px auto;
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(80, 80, 80);
+    color: lime;
+    font-family: 'IBM Plex Mono', monospace;
+}
