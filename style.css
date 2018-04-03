@@ -1,80 +1,101 @@
-body{
-    background: black;
-}
-
-
-/*font-family: 'Open Sans', sans-serif;
-/*font-family: 'IBM Plex Mono', monospace;
-*/
-
-
 
 .inner__container{
+    font-family: 'Open Sans', sans-serif;
     display:grid;
     grid-template-columns: repeat(25, 1fr);
     grid-template-rows: repeat(25, 1fr);
-    margin: 0 auto;
-    width: 60%;
+    width: 100%;
+    height: 101%;
+    background: #4a4a4a;
+    margin: 0;
     height: 100%;
-    background: black;
-    border: solid white 1px;
+    width: 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
 .logo{
-    margin: 5px;
-    margin-left: 10px;
-    width: 100px;
+    margin: 5px auto;
+    margin-left: 50px;
+    width: 200px;
     height: 100px;
+    fill: white;
 }
 
 .jacit__text{
+    padding: 2.2%;
+    padding-right: 15px;
     height: 100%;
-    margin: 45 30 0 0;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px, 1px rgb(228, 228, 228);
 }
 
 .topbar__container{
     display: flex;
+    align-content: center;
     justify-content: space-between;
     grid-column: 1 / -1;
     grid-row: 1 / 4;
-    background: limegreen;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.247), 0 10px 15px rgba(0, 0, 0, 0.185);
+    background: #f0505e;
+    background-image: url("cbg.png");
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
 .sidebar__nav{
     overflow-y: scroll;
-    background: aqua;
+    background: #fff;
     grid-column: 1 / 5;
-    grid-row: 6 / 24;
+    grid-row:  4/ -1;
 }
 
 .content__containers__container{
     grid-column: 5 / -1;
     grid-row: 4 / -1;
-    background: violet;
+    background: #fff;
+    background-image: url("cbg.png");
 
 }
 
 
-
-/* This is to try and add a comment so that github will work
  /* These two blocks are for the two different types of containers needed for the documentation */
 .step{
-    margin: 5px auto;
+    margin: 20px auto;
     width: 95%;
     height: auto;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
-    background: rgb(230, 230, 230);
+    background: white;
     color: black;
+    box-shadow:0 3px 6px rgba(245, 242, 242, 0.842), 0 3px 6px rgb(214, 214, 214);
 }
 
 .code{
-    margin: 5px auto;
+    margin: 20px auto;
     width: 95%;
     height: auto;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
-    background: rgb(80, 80, 80);
-    color: lime;
+    background: #282828;
+    color: #f0505e;
     font-family: 'IBM Plex Mono', monospace;
 }
+
+/*=================================================================================================================================*/
+/*=================================================================================================================================*/
+/*=================================================================================================================================*/
+/*=================================================================================================================================*/
+/*=================================================================================================================================*/
+
+ul{
+    list-style: none;
+    line-height: 40px;
+}
+
