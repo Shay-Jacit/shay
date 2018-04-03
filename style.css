@@ -28,6 +28,7 @@ body{
 }
 
 .jacit__text{
+    margin: 0 auto;
     width: auto;
     font-size: 25px;
     color: #fff;
