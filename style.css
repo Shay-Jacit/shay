@@ -55,6 +55,10 @@ body{
 
 }
 
+
+
+
+ /* These two blocks are for the two different types of containers needed for the documentation */
 .step{
     margin: 5px auto;
     width: 95%;
