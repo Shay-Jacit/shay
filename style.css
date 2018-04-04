@@ -1,38 +1,63 @@
+/* sets the body margin to 0 so that there is no separation of div and wall */
 body{
     margin: 0;
 }
 
 
+/* Defines the inner container of the website where everything is stored
+This defines all of the geneic styles like font */
 .inner__container{
+    /* defines font family using google fonts */
     font-family: 'Open Sans', sans-serif;
+
+    /* uses css grids to make the layout easier to manipulate overall */
     display:grid;
     grid-template-columns: repeat(25, 1fr);
     grid-template-rows: repeat(25, 1fr);
-    width: 100%;
-    height: 101%;
+
+    /* Generic container styling */
     background: #4a4a4a;
     margin: 0;
     height: 100%;
     width: 100%;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
 }
 
+
+/* container for the logo (jl-white.svg */
 .logo__container{
-    width: 500px;
-    height: 113px;
+    display: flex;
+    width: auto;
+    height: 100%;
+
 }
 
-
-.logo{
-    margin-top: 4.5%;
-    margin-left: -20%;
-    height: 60%;
+/* adds a link to the JACIT logo and styles to keep the image centered */
+.home{
+    max-width: 350px;
+    height: 100%;
     width:100%;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex
 }
 
 
+/* Styling for the logo (jl-white.svg) so that it fits centrally*/
+.logo{
+    display: block;
+    /* Generic stying to limit svg size */
+    max-width: 220px;
+    height: auto;
+    width:100%;
+    /* Align the image vertically centered so that it looks nice */
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+/* vvvv This section will be removed in due time, but is a place holder currently vvvv */
 .jacit__text{
     padding-right: 20px;
     display: flex;
@@ -40,11 +65,15 @@ body{
     flex-direction: column;
     text-align: center;
     width: auto;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-shadow: 1px, 1px rgb(228, 228, 228);
 }
+/*  ^^^^  This section will be removed in due time, but is a place holder currently ^^^^ */
 
+
+
+/* This is the container that holds all of the things that appear at the top of the page */
 .topbar__container{
     position: relative;
     z-index: 1;
@@ -65,6 +94,7 @@ body{
     -webkit-box-sizing:border-box;
 }
 
+/* This contains all of the side bar items and containers on the front end */
 .sidebar__nav{
     overflow-y: auto;
     overflow-x: hidden;
@@ -73,6 +103,8 @@ body{
     grid-row:  4/ -1;
 }
 
+
+/* Yo dawg we heard you liked containers so we put containers in your containers so you can enjoy containers while in container */
 .content__containers__container{
     grid-column: 5 / -1;
     grid-row: 4 / -1;
@@ -83,6 +115,8 @@ body{
 
 
  /* These two blocks are for the two different types of containers needed for the documentation */
+
+ /* apply this class to text blocks that are supposed to be steps in the doccumentation */
 .step{
     margin: 20px auto;
     width: 95%;
@@ -94,6 +128,7 @@ body{
     box-shadow:0 3px 6px rgba(245, 242, 242, 0.842), 0 3px 6px rgb(214, 214, 214);
 }
 
+/* apply this class to text blocks that are supposed to represent lines of code within the doccumentation */
 .code{
     margin: 20px auto;
     width: 95%;
