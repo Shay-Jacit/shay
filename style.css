@@ -33,6 +33,7 @@ This defines all of the geneic styles like font */
 
 /* adds a link to the JACIT logo and styles to keep the image centered */
 .home{
+    padding: 10px;
     max-width: 350px;
     height: 100%;
     width:100%;
@@ -176,3 +177,37 @@ This defines all of the geneic styles like font */
     border-bottom: solid 5px #f1f1f1;
 }
 
+
+
+
+
+
+@media only screen and (max-width: 740px){
+
+
+
+    .sidebar__nav{
+        visibility: hidden;
+    }
+
+
+    .topbar__container{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .content__containers__container{
+padding: 20px;
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        background: #f1f1f1;
+        background-image: url("cbg.png");
+    
+    }
+
+
+    .list__item{
+        padding:none;
+        margin: none;
+    }
+}
