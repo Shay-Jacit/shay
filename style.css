@@ -77,7 +77,7 @@ This defines all of the geneic styles like font */
 
 /* This is the container that holds all of the things that appear at the top of the page */
 .topbar__container{
-    position: relative;
+    /* position: relative; */
     z-index: 1;
     display: flex;
     align-content: center;
@@ -180,6 +180,60 @@ This defines all of the geneic styles like font */
     border-bottom: solid 5px #f1f1f1;
 }
 
+.nav__items{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.nitem__container{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.801);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nitem__container.responsive{
+    display: flex;
+}
+
+.nitem{
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #454545;
+}
+
+
+.close{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    text-decoration: none;
+    color: #f0505e;
+    font-size: 30px;
+}
+
+.icon{
+    font-size: 30px;
+    text-decoration: none;
+    color:white;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.mobile{
+    display: none;
+}
+
 
 
 
@@ -188,6 +242,10 @@ This defines all of the geneic styles like font */
 @media only screen and (max-width: 740px){
 
 
+    .mobile{
+        display: block;
+        color: #fff;
+    }
 
     .sidebar__nav{
         visibility: hidden;
@@ -213,4 +271,11 @@ This defines all of the geneic styles like font */
         padding:none;
         margin: none;
     }
+
+
+
+    .nav__items a:not(:first-child) {display: none;}
+    .nav__items a.icon {
+      float: right;
+      display: block;
 }

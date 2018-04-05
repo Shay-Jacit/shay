@@ -19,13 +19,30 @@
                     <img class="logo" src="jl-white.svg" >
                 </a>
             </div>
-
-            <div class="jacit__text">
-                WEB DESIGN AND DIGITAL MARKETING EXPERTS.
-            </div>
-
+                <div class="nitem__container" id="navitems">
+                    <div class="nitem nitem1">message</div>
+                    <div class="nitem nitem2">message</div>
+                    <div class="nitem nitem3">message</div>
+                    <div class="nitem nitem4">message</div>
+                    <div class="nitem nitem5">message</div>
+                
+                    <a href="javascript:void(0);" class="close" onclick="bmd()">&#9776;</a>
+                </div>
+                     <a href="javascript:void(0);" class="icon mobile" onclick="bmd()">&#9776;</a>
 
         </div>
+
+        <script>
+            function bmd() {
+                var x = document.getElementById("navitems");
+                if (x.className === "nitem__container") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nitem__container";
+                }
+            }
+
+        </script>
 
         <div class="sidebar__nav">
             <div class="item__container">
