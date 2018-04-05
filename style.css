@@ -186,6 +186,14 @@ This defines all of the geneic styles like font */
     margin: 10px;
 }
 
+.menu{
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
 .nitem__container{
     display: none;
     position: absolute;
@@ -214,8 +222,8 @@ This defines all of the geneic styles like font */
 
 
 .close{
-    top: 20px;
-    right: 20px;
+    top: 29px;
+    right: 40px;
     position: absolute;
     text-decoration: none;
     color: #f0505e;
@@ -226,20 +234,60 @@ This defines all of the geneic styles like font */
     font-size: 30px;
     text-decoration: none;
     color:white;
-    margin-right: 20px;
-    margin-top: 20px;
 }
 
 .mobile{
     display: none;
 }
 
+.desktopmenu{
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+}
+
+
+.dnitems{
+    display: flex;
+    flex-direction: row;
+}
+
+.dnitem{
+    margin: 0 20px 0 5px;
+}
+
+.mobilemenu{
+    grid-column: 10 / 11;
+    grid-row: 2 / 3;
+}
 
 
 
 
 
-@media only screen and (max-width: 200px){
+@media only screen and (max-width: 740px){
+
+    .topbar__container{
+        height: 80px;
+
+    }
+
+    .menu{
+        width: 100px;
+
+    }
+
+    .logo{
+        padding-left: 20px;
+    }
+
+
+
+    .desktopmenu{
+        display: none;
+        font-size: 1px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 
 
     .mobile{
@@ -274,7 +322,9 @@ This defines all of the geneic styles like font */
 
 
 
-    .nav__items a:not(:first-child) {display: none;}
+.nav__items a:not(:first-child) {
+    display: none;
+}
     .nav__items a.icon {
       float: right;
       display: block;
