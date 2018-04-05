@@ -222,8 +222,8 @@ This defines all of the geneic styles like font */
 
 
 .close{
-    top: 29px;
-    right: 40px;
+    top: 19px;
+    right: 20px;
     position: absolute;
     text-decoration: none;
     color: #f0505e;
