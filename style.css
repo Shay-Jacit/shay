@@ -32,6 +32,23 @@ This defines all of the geneic styles like font */
 
 }
 
+.logo{
+    display: block;
+    /* Generic stying to limit svg size */
+    max-width: 220px;
+    height: auto;
+    width:100%;
+    /* Align the image vertically centered so that it looks nice */
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+.logo__homepage{
+    grid-column: 1 / 10;
+    grid-row: 1 / 5;
+}
+
 /* adds a link to the JACIT logo and styles to keep the image centered */
 .home{
     padding: 10px;
@@ -46,18 +63,7 @@ This defines all of the geneic styles like font */
 
 
 /* Styling for the logo (jl-white.svg) so that it fits centrally*/
-.logo{
-    display: block;
-    /* Generic stying to limit svg size */
-    max-width: 220px;
-    height: auto;
-    width:100%;
-    /* Align the image vertically centered so that it looks nice */
-    justify-content: center;
-    flex-direction: column;
-    align-self: center;
 
-}
 
 /* vvvv This section will be removed in due time, but is a place holder currently vvvv */
 .jacit__text{
@@ -110,6 +116,11 @@ This defines all of the geneic styles like font */
 .content__containers__container{
     padding: 20px;
     grid-column: 5 / -1;
+    grid-row: 4 / -1;
+}
+
+.homepage__content{
+    grid-column: 1 / -1;
     grid-row: 4 / -1;
 }
 
@@ -216,7 +227,6 @@ This defines all of the geneic styles like font */
     margin: 10px;
     font-weight: 400;
     font-size: 20px;
-
     color: #454545;
 }
 
@@ -249,16 +259,45 @@ This defines all of the geneic styles like font */
 .dnitems{
     display: flex;
     flex-direction: row;
+    color: #000;
+    text-decoration: none;
 }
 
 .dnitem{
     margin: 0 20px 0 5px;
+    width: auto;
+    height: auto;
+    padding: 10 5 10 5;
+    background: rgba(216, 77, 88, 0.151);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    transition: border-width 0.6s ease;
 }
+
+
+.dnitem::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f0505e;
+    transition: width .3s;
+}
+
+
+.dnitem:hover::after{
+    color: #fff;
+    border-bottom: solid 2px #454545;
+    width: 100%;
+    transition: width .3s;
+}
+
 
 .mobilemenu{
     grid-column: 10 / 11;
     grid-row: 2 / 3;
 }
+
 
 
 

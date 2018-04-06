@@ -1,128 +1,31 @@
-
 <html>
 
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans:400,400i,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
 </head>
 
-<title>
-    Jacit Documentation
-</title>
+    <title>
+        Jacit Homepage
+    </title>
 
-<body>
-    <div class="inner__container">
-        <div class="topbar__container">
-            <div class="logo__container">
-                <a class="home" href="index.html">
-                    <img class="logo" src="jl-white.svg" >
-                </a>
-            </div>
-
-            <div class="menu">
-                <div class="desktopmenu">
-                    <div class="dnitems">
-                        <div class="dnitem dnitem1">message</div>
-                        <div class="dnitem dnitem2">message</div>
-                        <div class="dnitem dnitem3">message</div>
-                        <div class="dnitem dnitem4">message</div>
-                        <div class="dnitem dnitem5">message</div>
-                    </div>
-                </div>
-
-
-                <div class="mobilemenu">
-                    <div class="nitem__container" id="navitems">
-                        <div class="nitem nitem1">message</div>
-                        <div class="nitem nitem2">message</div>
-                        <div class="nitem nitem3">message</div>
-                        <div class="nitem nitem4">message</div>
-                        <div class="nitem nitem5">message</div>
-                    
-                        <a href="javascript:void(0);" class="close" onclick="bmd()">&#9776;</a>
-                    </div>
-                         <a href="javascript:void(0);" class="icon mobile" onclick="bmd()">&#9776;</a>
-                </div>
-
-            </div>
-
-
-
+    <div class="outter">
+        <div class="logo">
+            <img src="jl-white.svg">            
         </div>
 
-        <script>
-            function bmd() {
-                var x = document.getElementById("navitems");
-                if (x.className === "nitem__container") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "nitem__container";
-                }
-            }
-
-        </script>
-
-        <div class="sidebar__nav">
-            <div class="item__container">
-                <div class="list__item menu__object1">Lorem Ipsum</div>
-                <div class="list__item menu__object2">Lorem Ipsum</div>
-                <div class="list__item menu__object3">Lorem Ipsum</div>
-                <div class="list__item menu__object4">Lorem Ipsum</div>
-                <div class="list__item menu__object5">Lorem Ipsum</div>
-                <div class="list__item menu__object6">Lorem Ipsum</div>
-                <div class="list__item menu__object7">Lorem Ipsum</div>
-                <div class="list__item menu__object8">Lorem Ipsum</div>
-                <div class="list__item menu__object9">Lorem Ipsum</div>
-                <div class="list__item menu__object10">Lorem Ipsum</div>
-            </div>
+        <div class="shortcuts">
+            <div class="shortcut__container container1">Rate books</div>
+            <div class="shortcut__container container2">CMS blocks</div>
+            <div class="shortcut__container container3"></div>
+            <div class="shortcut__container container4">Lorem Ipsum Dolor Sit Amet</div>
+            <div class="shortcut__container container5">Lorem Ipsum Dolor Sit Amet</div>
         </div>
-
-        <div class="content__containers__container">
-            <div class="doc__cont step">
-                Lorem Ipsum Dolor sit amet (This is a step container)
-                <br>
-                This is step 1) 
-                <br>
-                you must do X , Y , and Z in order to be able to move on
-            </div>
-
-            <div class="doc__cont code">
-                    .sidebar__nav{
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;overflow-y: scroll;
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;background: aqua;
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / 5;
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;grid-row: 6 / 24;
-                        <br>
-                    }
-            </div>
-            
-            <div class="doc__cont step">
-                This is a step container <br> with a code container in it
-
-                <div class="doc__cont code">
-                        .sidebar__nav{
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;overflow-y: scroll;
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;background: aqua;
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / 5;
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;grid-row: 6 / 24;
-                            <br>
-                        }
-                </div>
-                    
-            </div>
-
 
     </div>
-</body>
+
+
 
 
 
